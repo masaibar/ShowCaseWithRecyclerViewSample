@@ -21,7 +21,10 @@ class BubbleShowCaseAndroidActivity : AppCompatActivity() {
         val linearLayoutManager = LinearLayoutManager(applicationContext)
         recycler_view.apply {
             layoutManager = linearLayoutManager
-            adapter = ItemAdapter(5)
+            adapter = ItemAdapter(
+                this@BubbleShowCaseAndroidActivity,
+                5
+            )
         }
     }
 }
